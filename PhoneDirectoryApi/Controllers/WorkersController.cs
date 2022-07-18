@@ -39,7 +39,7 @@ namespace PhoneDirectoryApi.Controllers
             return BadRequest("No records found");
 
         }
-        [HttpPost(nameof(GetEntities))]
+        [HttpGet(nameof(GetEntities))]
         public IActionResult GetEntities()
         {
             var result = _workersRepository.GetEntities();
